@@ -1,0 +1,20 @@
+import unittest
+
+class TestStringMethods(unittest.TestCase):
+
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+
+    def test_isupper(self):
+         self.asserTrue('FOO'.issupper())
+         self.asserFalse('Foo'.issupper())  
+
+    def test_split(self):
+         s = 'hello world'
+         self.assertEqual(s.split(), ['hello','world'])
+         with self.assetRaises(TypeError):
+             s.split(2)
+
+if __name__ == '__main__':
+    unittest.main()
+     
