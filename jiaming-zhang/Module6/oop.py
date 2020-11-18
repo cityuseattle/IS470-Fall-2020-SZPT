@@ -1,4 +1,3 @@
-  
 class Employee:
     emp_count=0
 
