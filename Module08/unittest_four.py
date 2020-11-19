@@ -8,16 +8,16 @@ class Solution:
         return s == s[::-1]
 
 
-a = Solution()
+a = Solution
 
 class Test(unittest.TestCase):
     
     def test_first(self):
-        self(a.palindrome(self,'Taco cat'))
+        self.assertEqual(a.palindrome(self,'Taco cat'), False)
     def test_second(self):
-        self(a.palindrome(self,'rececar'))
+        self.assertEqual(a.palindrome(self,'rececar'), False)
     def test_third(self):
-        self(a.palindrome(self,'Palindrome'))
+        self.assertEqual(a.palindrome(self,'Palindrome'), False)
         
 
 if __name__ == '__main__':
