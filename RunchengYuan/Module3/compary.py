@@ -5,5 +5,5 @@ print(first==second)
 
 #compare two dictionary, other doesnot matter
 first_dict = {'name': 'aaa', 'species': 'human', 'age': 20}
-second_dict = {'species': 'human', 'age': 20, 'name:':'aaa'}
+second_dict = {'species': 'human', 'age': 20, 'name:': 'aaa'}
 print(first_dict==second_dict)
